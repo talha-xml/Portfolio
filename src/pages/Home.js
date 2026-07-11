@@ -20,7 +20,7 @@ const Home = () => {
             I am a passionate Web Developer and have a keen interest in DevOps Engineering along
             with Artificial Intelligence. I love building creative and efficient solutions that
             bridge the gap between modern web technologies and intelligent systems. Always eager to
-            learn and explore new challenges in the tech world.
+            learn and explore new challenges in tech world.
           </p>
 
           <div className="social-icons">
