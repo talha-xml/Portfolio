@@ -236,6 +236,12 @@ body {
   animation: pulseRing 3.5s infinite ease-in-out;
 } */
 
+.code-card-wrapper {
+  opacity: 0;
+  animation: codeCardEnter 0.9s ease forwards;
+  animation-delay: 0.5s;
+}
+
 .code-card {
   width: 500px;
   position: relative;
@@ -344,6 +350,33 @@ body {
   animation: floatTwo 8s infinite ease-in-out;
 }
 
+@keyframes codeCardEnter {
+  from {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes codeCardIn {
+  0% {
+    opacity: 0;
+    transform: translateX(70px) scale(0.95);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-8px) scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
 @keyframes codeAppear {
   from {
     opacity: 0;

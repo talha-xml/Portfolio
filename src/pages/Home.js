@@ -106,9 +106,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="hero-visual">
-          <div className="pulse-ring"></div>
-          <div className="glow-circle"></div>
+        <div className="code-card-wrapper">
           <div ref={cardRef} className="code-card">
             <div className="window-header">
               <div className="window-buttons">
