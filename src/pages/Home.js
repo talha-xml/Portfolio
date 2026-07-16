@@ -106,44 +106,47 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="code-card-wrapper">
-          <div ref={cardRef} className="code-card">
-            <div className="window-header">
-              <div className="window-buttons">
-                <span className="red"></span>
-                <span className="yellow"></span>
-                <span className="green"></span>
+        <div className="hero-visual">
+          <div className="glow-circle"></div>
+          <div className="code-card-wrapper">
+            <div ref={cardRef} className="code-card">
+              <div className="window-header">
+                <div className="window-buttons">
+                  <span className="red"></span>
+                  <span className="yellow"></span>
+                  <span className="green"></span>
+                </div>
               </div>
-            </div>
-            <div className="code-content">
-              <p>
-                <span className="keyword">const</span> <span className="variable">developer</span> ={' '}
-                {'{'}
-              </p>
-              <p className="indent">
-                name:
-                <span className="string">"Muhammad Talha Faizan"</span>,
-              </p>
-              <p className="indent">
-                role:
-                <span className="string">["Full-Stack Developer", "AI/ML Engineer"]</span>,
-              </p>
-              <p className="indent">
-                stack:<span className="string">["React","FastAPI","PostgreSQL"]</span>,
-              </p>
-              <p className="indent">
-                cloud:
-                <span className="string">["Docker","AWS"]</span>,
-              </p>
-              <p className="indent">
-                ai:
-                <span className="string">["LLMs","RAG", "Prompt Engineering"]</span>
-              </p>
-              <p>{'};'}</p>
-              <p>
-                <span className="function">buildFuture</span>
-                ();
-              </p>
+              <div className="code-content">
+                <p>
+                  <span className="keyword">const</span> <span className="variable">developer</span>{' '}
+                  = {'{'}
+                </p>
+                <p className="indent">
+                  name:
+                  <span className="string">"Muhammad Talha Faizan"</span>,
+                </p>
+                <p className="indent">
+                  role:
+                  <span className="string">["Full-Stack Developer", "AI/ML Engineer"]</span>,
+                </p>
+                <p className="indent">
+                  stack:<span className="string">["React","FastAPI","PostgreSQL"]</span>,
+                </p>
+                <p className="indent">
+                  cloud:
+                  <span className="string">["Docker","AWS"]</span>,
+                </p>
+                <p className="indent">
+                  ai:
+                  <span className="string">["LLMs","RAG", "Prompt Engineering"]</span>
+                </p>
+                <p>{'};'}</p>
+                <p>
+                  <span className="function">buildFuture</span>
+                  ();
+                </p>
+              </div>
             </div>
           </div>
         </div>

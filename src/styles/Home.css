@@ -237,6 +237,10 @@ body {
 } */
 
 .code-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   opacity: 0;
   animation: codeCardEnter 0.9s ease forwards;
   animation-delay: 0.5s;
@@ -440,6 +444,14 @@ body {
 
     opacity: 0.75;
   }
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 520px;
 }
 
 .hero-content > * {
