@@ -1,43 +1,44 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth'
+    });
 
+    setMenuOpen(false);
+  };
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">PORTFOLIO</Link>
+      <div className="logo" onClick={() => scrollToSection('home')}>
+        <span className="logo-text">
+          Portfolio<span className="dot">.</span>
+        </span>
       </div>
 
-      <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>
-          Home
-        </Link>
-
-        <Link to="/about" onClick={() => setIsOpen(false)}>
-          About
-        </Link>
-
-        <Link to="/skills" onClick={() => setIsOpen(false)}>
-          Skills
-        </Link>
-
-        <Link to="/contact" onClick={() => setIsOpen(false)}>
+      <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+        <button onClick={() => scrollToSection('home')}>Home</button>
+        <button onClick={() => scrollToSection('about')}>About</button>
+        <button onClick={() => scrollToSection('skills')}>Skills</button>
+        <button onClick={() => scrollToSection('services')}>Services</button>
+        <button onClick={() => scrollToSection('projects')}>Projects</button>
+        <button className="contact-btn" onClick={() => scrollToSection('contact')}>
           Contact
-        </Link>
+        </button>
       </div>
 
-      <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      <div
+        className={`hamburger ${menuOpen ? 'active' : ''}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
 }
-
 export default Navbar;

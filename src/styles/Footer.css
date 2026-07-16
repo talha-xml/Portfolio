@@ -1,9 +1,8 @@
-/* src/styles/Footer.css */
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #20232a;  /* React theme blue */
-  color:  #61dafb; /* React dark theme text */
+  background-color: #20232a; /* React theme blue */
+  color: #61dafb; /* React dark theme text */
   margin-top: auto;
 }
 
@@ -12,4 +11,3 @@
   font-weight: 500;
   opacity: 0.95;
 }
-

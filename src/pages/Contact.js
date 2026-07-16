@@ -1,28 +1,44 @@
-import React from 'react';
 import '../styles/Contact.css';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="contact-page">
-      <h1 className="contact-heading">Contact Me</h1>
-
-      <p className="contact-text">
-        Thank you for taking the time to visit my portfolio. I am always interested in discussing
-        software development, AI, machine learning, web technologies, and new opportunities.
-      </p>
-
-      <p className="contact-text">
-        Whether you have a project idea, an internship opportunity, or simply wish to connect, feel
-        free to reach out through email. I would be happy to hear from you.
-      </p>
-
-      <a className="contact-email" href="mailto:mtalhafaizan30@gmail.com">
-        mtalhafaizan30@gmail.com
-      </a>
-
-      <p className="contact-note">I typically respond within 24–48 hours.</p>
-    </div>
+    <section id="contact" className="contact">
+      <div className="contact-card">
+        <p className="contact-tag">Contact</p>
+        <h1 className="contact-title">
+          Let's Build Something <span>Amazing.</span>
+        </h1>
+        <p className="contact-text">
+          Whether you're looking for a Full-Stack Developer, AI Engineer, or simply want to discuss
+          an exciting idea, I'd love to hear from you.
+        </p>
+        <div className="contact-email">
+          <span>Email</span>
+          <a href="mailto:YOUR_EMAIL@gmail.com">mtalhafaizan30@gmail.com</a>
+        </div>
+        <div className="contact-links">
+          <a
+            href="https://www.linkedin.com/in/m-talha-faizan-46158532a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            <FaLinkedin />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/talha-xml"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            <FaGithub />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
-
 export default Contact;
