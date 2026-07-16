@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles/Home.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const Home = () => {
@@ -45,60 +45,7 @@ const Home = () => {
       card.removeEventListener('mouseleave', reset);
     };
   }, []);
-  const codeLines = [
-    <>
-      <span className="keyword">const</span> <span className="variable">developer</span> = {'{'}
-    </>,
-    <>
-      <span className="indent">
-        name: <span className="string">"Muhammad Talha Faizan"</span>,
-      </span>
-    </>,
-    <>
-      <span className="indent">
-        role: <span className="string">"Full-Stack Developer"</span>,
-      </span>
-    </>,
-    <>
-      <span className="indent">
-        stack: <span className="string">["React","FastAPI","PostgreSQL"]</span>,
-      </span>
-    </>,
-    <>
-      <span className="indent">
-        cloud: <span className="string">["Docker","AWS"]</span>,
-      </span>
-    </>,
-    <>
-      <span className="indent">
-        ai: <span className="string">["LLMs","RAG", "Prompt Engineering"]</span>
-      </span>
-    </>,
-    <> {'};'} </>,
-    <>
-      <span className="function">buildFuture</span>();
-    </>
-  ];
 
-  const [visibleLines, setVisibleLines] = useState([]);
-
-  useEffect(() => {
-    let index = 0;
-
-    const interval = setInterval(() => {
-      setVisibleLines((prev) => {
-        if (index < codeLines.length) {
-          index++;
-          return [...prev, codeLines[index - 1]];
-        }
-
-        clearInterval(interval);
-        return prev;
-      });
-    }, 500);
-
-    return () => clearInterval(interval);
-  }, []);
   return (
     <section id="home" className="home">
       <div className="background-grid"></div>
