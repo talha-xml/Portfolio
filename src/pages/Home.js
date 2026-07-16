@@ -61,13 +61,7 @@ const Home = () => {
           <h1 className="hero-title">
             Muhammad Talha <span>Faizan</span>
           </h1>
-          <h2 className="hero-subtitle">
-            Full-Stack Developer
-            <span className="separator"> | </span>
-            AI/ML Engineer
-            <span className="separator"> | </span>
-            DevOps Practitioner
-          </h2>
+          <h2 className="hero-subtitle">Software Engineer</h2>
           <p className="hero-description">
             I am a passionate Web Developer with a strong interest in DevOps Engineering and
             Artificial Intelligence. I enjoy building scalable applications, cloud-native solutions,
