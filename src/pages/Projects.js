@@ -51,7 +51,7 @@ function Projects() {
       title: 'Risuto',
       subtitle: 'Anime Tracker',
       description:
-        'Risuto is a full-stack anime tracking web application designed to help users manage and organize their anime collection. It allows users to add anime, track watching status, set priorities, manage genres, mark favorites, and store personal notes. The application features user authentication, a responsive anime-themed interface, dashboard analytics, and a personal library. It is built using React.js, Node.js, Express.js, and MongoDB.',
+        'Risuto is a full-stack anime tracking web application designed to help users manage and organize their anime collection. It allows users to add anime, track watching status, set priorities, manage genres, mark favorites, and store personal notes. The application features user authentication, a responsive anime-themed interface, dashboard analytics, and a personal library.',
       technologies: [
         'JavaScript',
         'ReactJS',
