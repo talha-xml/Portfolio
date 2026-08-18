@@ -67,7 +67,7 @@ const About = () => {
                 <FaServer /> System Design
               </span>
               <span>
-                <FaFilm> Video Editing</FaFilm>
+                <FaFilm /> Video Editing
               </span>
             </div>
           </div>
