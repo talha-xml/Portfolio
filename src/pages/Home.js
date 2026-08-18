@@ -90,7 +90,7 @@ const Home = () => {
           </div>
           <div className="hero-stats">
             <div>
-              <h3>3</h3>
+              <h3>4</h3>
               <p>Projects Built</p>
             </div>
             <div className="divider"></div>
