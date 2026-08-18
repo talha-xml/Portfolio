@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/About.css';
-import { FaReact, FaBrain, FaCloud, FaDocker, FaChartLine, FaServer } from 'react-icons/fa';
+import { FaReact, FaBrain, FaCloud, FaDocker, FaChartLine, FaServer, FaFilm } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -65,6 +65,9 @@ const About = () => {
               </span>
               <span>
                 <FaServer /> System Design
+              </span>
+              <span>
+                <FaFilm> Video Editing</FaFilm>
               </span>
             </div>
           </div>
