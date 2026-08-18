@@ -46,6 +46,26 @@ function Projects() {
         'This project implements an inverted index using Hadoop and MapReduce for efficient retrieval of documents based on their content. The project demonstrates the use of distributed computing techniques to process large datasets and build an index that allows for fast search and retrieval of information. Testes on 50+ eBooks.',
       technologies: ['Python', 'Hadoop', 'MapReduce', 'Big Data'],
       github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex'
+    },
+    {
+      title: 'Risuto',
+      subtitle: 'Anime Tracker',
+      description:
+        'Risuto is a full-stack anime tracking web application designed to help users manage and organize their anime collection. It allows users to add anime, track watching status, set priorities, manage genres, mark favorites, and store personal notes. The application features user authentication, a responsive anime-themed interface, dashboard analytics, and a personal library. It is built using React.js, Node.js, Express.js, and MongoDB.',
+      technologies: [
+        'JavaScript',
+        'ReactJS',
+        'ExpressJS',
+        'NodeJS',
+        'MongoDB',
+        'JWT',
+        'Bcrypt',
+        'Render',
+        'MongoDB Atlas'
+      ],
+      github: 'https://github.com/talha-xml/risuto',
+      website: 'https://risuto-frontend.onrender.com/',
+      unavailable: false
     }
   ];
 

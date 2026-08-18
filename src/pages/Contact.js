@@ -7,7 +7,7 @@ function Contact() {
       <div className="contact-card">
         <p className="contact-tag">Contact</p>
         <h1 className="contact-title">
-          Let's Build Something <span>Amazing.</span>
+          want to Build Something <span>Nice?</span>
         </h1>
         <p className="contact-text">
           Whether you're looking for a Full-Stack Developer, AI Engineer, or simply want to discuss
