@@ -27,6 +27,7 @@ function Projects() {
       ],
       github: 'https://github.com/airemind/ReMIND-FYP',
       website: 'https://www.remindio.space',
+      demo: 'https://drive.google.com/file/d/1zOId8WjTa-T1dO0bHx93q9JBHH22npdH/view?usp=drive_link',
       featured: true,
       unavailable: true
     },
