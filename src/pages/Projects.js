@@ -45,7 +45,9 @@ function Projects() {
         'JWT',
         'Bcrypt',
         'Render',
-        'MongoDB Atlas'
+        'MongoDB Atlas',
+        'Anilist API',
+        'Gemini Flash lite 3.5'
       ],
       github: 'https://github.com/talha-xml/risuto',
       website: 'https://risuto-frontend.onrender.com/',
