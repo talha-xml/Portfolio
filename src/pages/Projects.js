@@ -32,23 +32,6 @@ function Projects() {
       unavailable: true
     },
     {
-      title: 'Compiler Construction',
-      subtitle: 'Compiler Phase I & Phase II Implementation',
-      description:
-        'This project involves implementing a compiler for a custom programming language, covering both Phase I and Phase II of compiler construction. It includes lexical analysis, syntax parsing, semantic analysis, symbol table management, error handling, and intermediate code generation to demonstrate the complete compilation process.',
-      technologies: ['C', 'Flex', 'Bison', 'Lexical Analyzer', 'Parser'],
-      github: 'https://github.com/talha-xml/Compiler-Construction-Project'
-    },
-
-    {
-      title: 'Hadoop Inverted Index',
-      subtitle: 'Parallel & Distributed Computing Project',
-      description:
-        'This project implements an inverted index using Hadoop and MapReduce for efficient retrieval of documents based on their content. The project demonstrates the use of distributed computing techniques to process large datasets and build an index that allows for fast search and retrieval of information. Testes on 50+ eBooks.',
-      technologies: ['Python', 'Hadoop', 'MapReduce', 'Big Data'],
-      github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex'
-    },
-    {
       title: 'Risuto',
       subtitle: 'Anime Tracker',
       description:
@@ -67,6 +50,23 @@ function Projects() {
       github: 'https://github.com/talha-xml/risuto',
       website: 'https://risuto-frontend.onrender.com/',
       unavailable: false
+    },
+    {
+      title: 'Compiler Construction',
+      subtitle: 'Compiler Phase I & Phase II Implementation',
+      description:
+        'This project involves implementing a compiler for a custom programming language, covering both Phase I and Phase II of compiler construction. It includes lexical analysis, syntax parsing, semantic analysis, symbol table management, error handling, and intermediate code generation to demonstrate the complete compilation process.',
+      technologies: ['C', 'Flex', 'Bison', 'Lexical Analyzer', 'Parser'],
+      github: 'https://github.com/talha-xml/Compiler-Construction-Project'
+    },
+
+    {
+      title: 'Hadoop Inverted Index',
+      subtitle: 'Parallel & Distributed Computing Project',
+      description:
+        'This project implements an inverted index using Hadoop and MapReduce for efficient retrieval of documents based on their content. The project demonstrates the use of distributed computing techniques to process large datasets and build an index that allows for fast search and retrieval of information. Testes on 50+ eBooks.',
+      technologies: ['Python', 'Hadoop', 'MapReduce', 'Big Data'],
+      github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex'
     }
   ];
 
