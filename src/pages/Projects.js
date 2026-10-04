@@ -101,6 +101,7 @@ function Projects() {
                   <FaGithub />
                   View Source
                 </a>
+
                 {project.website && (
                   <a
                     href={project.website}
@@ -110,6 +111,18 @@ function Projects() {
                   >
                     <FaExternalLinkAlt />
                     Visit
+                  </a>
+                )}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="demo-btn"
+                  >
+                    <FaExternalLinkAlt />
+                    Video Demo
                   </a>
                 )}
               </div>
