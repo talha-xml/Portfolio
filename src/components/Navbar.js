@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo" onClick={() => scrollToSection('home')}>
         <span className="logo-text">
-          Portfolio<span className="dot">.</span>
+          M. Talha Faizan<span className="dot"></span>
         </span>
       </div>
 
