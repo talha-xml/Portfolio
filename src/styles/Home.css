@@ -45,7 +45,7 @@ body {
   height: 450px;
   top: -150px;
   left: -120px;
-  background: rgba(97, 218, 251, 0.14);
+  background: rgba(52, 211, 153, 0.14);
 }
 
 .blob2 {
@@ -83,9 +83,9 @@ body {
   gap: 10px;
   padding: 12px 18px;
   border-radius: 50px;
-  background: rgba(97, 218, 251, 0.06);
-  border: 1px solid rgba(97, 218, 251, 0.2);
-  color: #b9f3ff;
+  background: rgba(52, 211, 153, 0.06);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  color: #b9ffe5;
   font-size: 13px;
   margin-bottom: 35px;
 }
@@ -94,8 +94,8 @@ body {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #61dafb;
-  box-shadow: 0 0 15px #61dafb;
+  background: #34d399;
+  box-shadow: 0 0 15px #34d399;
 }
 
 .hero-greeting {
@@ -114,7 +114,7 @@ body {
 }
 
 .hero-title span {
-  background: linear-gradient(120deg, #61dafb, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .separator {
-  color: #61dafb;
+  color: #34d399;
 }
 
 .hero-description {
@@ -158,13 +158,13 @@ body {
 
 .primary-btn {
   border: none;
-  background: linear-gradient(90deg, #61dafb, #8b5cf6);
+  background: linear-gradient(90deg, #34d399, #8b5cf6);
   color: #09101b;
 }
 
 .primary-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(97, 218, 251, 0.4);
+  box-shadow: 0 0 35px rgba(52, 211, 153, 0.4);
 }
 
 .secondary-btn {
@@ -175,7 +175,7 @@ body {
 
 .secondary-btn:hover {
   transform: translateY(-5px);
-  border-color: #61dafb;
+  border-color: #34d399;
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -193,7 +193,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  color: #61dafb;
+  color: #34d399;
   background: #11152b;
   border: 1px solid rgba(255, 255, 255, 0.08);
   text-decoration: none;
@@ -202,9 +202,9 @@ body {
 
 .hero-socials a:hover {
   transform: translateY(-6px);
-  background: #61dafb;
+  background: #34d399;
   color: #090b18;
-  box-shadow: 0 0 30px rgba(97, 218, 251, 0.4);
+  box-shadow: 0 0 30px rgba(52, 211, 153, 0.4);
 }
 
 .hero-stats {
@@ -234,7 +234,7 @@ body {
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  border: 1px solid rgba(97, 218, 251, 0.2);
+  border: 1px solid rgba(52, 211, 153, 0.2);
   animation: pulseRing 3.5s infinite ease-in-out;
 } */
 
@@ -256,17 +256,17 @@ body {
   background: #11152b;
   border: 1px solid transparent;
   background-image: linear-gradient(#11152b, #11152b),
-    linear-gradient(135deg, #61dafb, #8b5cf6, #ec4899);
+    linear-gradient(135deg, #34d399, #8b5cf6, #ec4899);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  box-shadow: 0 0 55px rgba(97, 218, 251, 0.15);
+  box-shadow: 0 0 55px rgba(52, 211, 153, 0.15);
   backdrop-filter: blur(20px);
   transform-style: preserve-3d;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .code-card:hover {
-  box-shadow: 0 25px 70px rgba(97, 218, 251, 0.25), 0 0 80px rgba(139, 92, 246, 0.18);
+  box-shadow: 0 25px 70px rgba(52, 211, 153, 0.25), 0 0 80px rgba(139, 92, 246, 0.18);
 }
 
 .window-buttons {
@@ -319,11 +319,11 @@ body {
 }
 
 .variable {
-  color: #61dafb;
+  color: #34d399;
 }
 
 .string {
-  color: #8be9fd;
+  color: #6ee7b7;
 }
 
 .function {
@@ -341,7 +341,7 @@ body {
   backdrop-filter: blur(15px);
   color: #dfe8ff;
   font-weight: 600;
-  box-shadow: 0 0 40px rgba(97, 218, 251, 0.08);
+  box-shadow: 0 0 40px rgba(52, 211, 153, 0.08);
   z-index: 3;
 }
 
@@ -400,7 +400,7 @@ body {
   display: inline-block;
   width: 8px;
   height: 18px;
-  background: #61dafb;
+  background: #34d399;
   margin-left: 5px;
   animation: blink 0.8s infinite;
   vertical-align: middle;

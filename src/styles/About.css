@@ -10,7 +10,7 @@
 }
 
 .section-tag {
-  color: #61dafb;
+  color: #34d399;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 14px;
@@ -25,7 +25,7 @@
 }
 
 .about-title span {
-  background: linear-gradient(90deg, #61dafb, #8b5cf6, #ec4899);
+  background: linear-gradient(90deg, #34d399, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -67,13 +67,13 @@
   padding: 30px;
   backdrop-filter: blur(18px);
   transition: 0.35s;
-  box-shadow: 0 0 45px rgba(97, 218, 251, 0.06);
+  box-shadow: 0 0 45px rgba(52, 211, 153, 0.06);
 }
 
 .info-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(97, 218, 251, 0.35);
-  box-shadow: 0 0 60px rgba(97, 218, 251, 0.14);
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 60px rgba(52, 211, 153, 0.14);
 }
 
 .info-card h3 {
@@ -119,15 +119,15 @@
   gap: 12px;
   padding: 12px 18px;
   border-radius: 50px;
-  background: rgba(97, 218, 251, 0.08);
-  border: 1px solid rgba(97, 218, 251, 0.15);
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.15);
   color: #d7ebff;
   transition: 0.3s;
   font-size: 15px;
 }
 
 .interest-list span:hover {
-  background: rgba(97, 218, 251, 0.16);
+  background: rgba(52, 211, 153, 0.16);
   transform: translateY(-4px);
 }
 
@@ -146,19 +146,19 @@
   text-align: center;
   transition: 0.35s;
   backdrop-filter: blur(18px);
-  box-shadow: 0 0 45px rgba(97, 218, 251, 0.06);
+  box-shadow: 0 0 45px rgba(52, 211, 153, 0.06);
 }
 
 .stat-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(97, 218, 251, 0.35);
-  box-shadow: 0 0 60px rgba(97, 218, 251, 0.14);
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 60px rgba(52, 211, 153, 0.14);
 }
 
 .stat-card h2 {
   font-size: 54px;
   margin-bottom: 12px;
-  background: linear-gradient(90deg, #61dafb, #8b5cf6);
+  background: linear-gradient(90deg, #34d399, #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -210,9 +210,10 @@
 }
 
 .interest-list svg {
-  color: #61dafb;
+  color: #34d399;
   font-size: 18px;
 }
+
 @media (max-width: 480px) {
   .about-title {
     font-size: 32px;

@@ -18,7 +18,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(97, 218, 251, 0.12), transparent 35%),
+  background: radial-gradient(circle at top left, rgba(52, 211, 153, 0.12), transparent 35%),
     radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.12), transparent 35%);
   pointer-events: none;
 }
@@ -26,7 +26,7 @@
 .contact-tag {
   position: relative;
   z-index: 2;
-  color: #61dafb;
+  color: #34d399;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.85rem;
@@ -44,7 +44,7 @@
 }
 
 .contact-title span {
-  background: linear-gradient(120deg, #61dafb, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -101,8 +101,8 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: rgba(97, 218, 251, 0.6);
-  box-shadow: 0 0 20px rgba(97, 218, 251, 0.08);
+  border-color: rgba(52, 211, 153, 0.6);
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.08);
 }
 
 .form-group textarea {
@@ -116,7 +116,7 @@
   padding: 14px 30px;
   border: none;
   border-radius: 999px;
-  background: #61dafb;
+  background: #34d399;
   color: #090b18;
   font-family: inherit;
   font-size: 0.95rem;
@@ -127,7 +127,7 @@
 
 .contact-submit:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(97, 218, 251, 0.3);
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.3);
 }
 
 .contact-email {
@@ -140,7 +140,7 @@
 }
 
 .contact-email span {
-  color: #61dafb;
+  color: #34d399;
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -155,7 +155,7 @@
 }
 
 .contact-email a:hover {
-  color: #61dafb;
+  color: #34d399;
 }
 
 .contact-links {
@@ -185,14 +185,14 @@
 
 .contact-link svg {
   font-size: 1.4rem;
-  color: #61dafb;
+  color: #34d399;
 }
 
 .contact-link:hover {
   transform: translateY(-8px);
-  border-color: rgba(97, 218, 251, 0.5);
-  background: rgba(97, 218, 251, 0.08);
-  box-shadow: 0 0 35px rgba(97, 218, 251, 0.12);
+  border-color: rgba(52, 211, 153, 0.5);
+  background: rgba(52, 211, 153, 0.08);
+  box-shadow: 0 0 35px rgba(52, 211, 153, 0.12);
 }
 
 @media (max-width: 768px) {
