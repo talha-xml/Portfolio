@@ -26,7 +26,7 @@ function Projects() {
         'JWT'
       ],
       github: 'https://github.com/airemind/ReMIND-FYP',
-      website: 'https://www.remindio.space',
+      website: 'https://remind-frontend.onrender.com/',
       demo: 'https://drive.google.com/file/d/1zOId8WjTa-T1dO0bHx93q9JBHH22npdH/view?usp=drive_link',
       featured: true,
       unavailable: true
@@ -130,17 +130,8 @@ function Projects() {
               </div>
               {project.unavailable && (
                 <p className="domain-warning">
-                  Domain is unavailable for now. Please Visit Github or
-                  <a
-                    href="https://www.linkedin.com/posts/m-talha-faizan-46158532a_remind-generativeai-artificialintelligence-ugcPost-7478797479589830656-owFh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFMFyEkBh3C8Od-QVZ0gWE-zDwDvyU0o8mo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <u>
-                      <strong> LinkedIn </strong>
-                    </u>
-                  </a>
-                  for more information.
+                  * Note: Remindio.space is the official domain. The "Visit" link above is an
+                  alternative domain; due to a limited hosting plan, processing will be much slower.
                 </p>
               )}
             </div>

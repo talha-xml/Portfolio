@@ -187,6 +187,16 @@
   color: #facc15;
   font-size: 0.85rem;
   font-weight: 600;
+  line-height: 1.6;
+}
+
+.domain-warning a {
+  color: #61dafb;
+  transition: opacity 0.2s ease;
+}
+
+.domain-warning a:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {
