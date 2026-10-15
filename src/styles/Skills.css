@@ -9,7 +9,7 @@
 }
 
 .section-tag {
-  color: #61dafb;
+  color: #34d399;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.85rem;
@@ -24,7 +24,7 @@
 }
 
 .skills-title span {
-  background: linear-gradient(120deg, #61dafb, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -51,7 +51,7 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(97, 218, 251, 0.08),
+    rgba(52, 211, 153, 0.08),
     rgba(139, 92, 246, 0.08),
     rgba(236, 72, 153, 0.06)
   );
@@ -61,8 +61,8 @@
 
 .skill-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(97, 218, 251, 0.35);
-  box-shadow: 0 0 45px rgba(97, 218, 251, 0.08);
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 45px rgba(52, 211, 153, 0.12);
 }
 
 .skill-card:hover::before {
@@ -78,9 +78,9 @@
   align-items: center;
   font-size: 28px;
   margin-bottom: 22px;
-  color: #61dafb;
-  background: rgba(97, 218, 251, 0.08);
-  border: 1px solid rgba(97, 218, 251, 0.2);
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.2);
 }
 
 .skill-card h2 {
@@ -112,9 +112,10 @@
 }
 
 .tech-stack span:hover {
-  background: #61dafb;
+  background: #34d399;
   color: #090b18;
-  border-color: #61dafb;
+  border-color: #34d399;
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.35);
 }
 
 @media (max-width: 900px) {

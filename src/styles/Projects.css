@@ -9,7 +9,7 @@
 }
 
 .section-tag {
-  color: #61dafb;
+  color: #34d399;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.85rem;
@@ -24,7 +24,7 @@
 }
 
 .projects-title span {
-  background: linear-gradient(120deg, #61dafb, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -46,14 +46,14 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(97, 218, 251, 0.35);
-  box-shadow: 0 0 45px rgba(97, 218, 251, 0.12);
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 45px rgba(52, 211, 153, 0.12);
 }
 .project-card.featured {
   position: relative;
   grid-column: 1 / -1;
-  border: 1px solid rgba(97, 218, 251, 0.35);
-  box-shadow: 0 0 50px rgba(97, 218, 251, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  box-shadow: 0 0 50px rgba(52, 211, 153, 0.08);
   overflow: hidden;
 }
 
@@ -63,7 +63,7 @@
   left: -48px;
   width: 170px;
   padding: 9px 0;
-  background: linear-gradient(135deg, #61dafb, #8b5cf6);
+  background: linear-gradient(135deg, #34d399, #8b5cf6);
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -94,7 +94,7 @@
 }
 
 .project-content h3 {
-  color: #61dafb;
+  color: #34d399;
   font-size: 1rem;
   margin-bottom: 18px;
 }
@@ -130,14 +130,14 @@
   border-radius: 999px;
   text-decoration: none;
   color: #090b18;
-  background: #61dafb;
+  background: #34d399;
   font-weight: 700;
   transition: 0.3s ease;
 }
 
 .github-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(97, 218, 251, 0.3);
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.35);
 }
 
 .project-buttons {
@@ -191,12 +191,13 @@
 }
 
 .domain-warning a {
-  color: #61dafb;
+  color: #34d399;
   transition: opacity 0.2s ease;
 }
 
 .domain-warning a:hover {
   opacity: 0.8;
+  color: #6ee7b7;
 }
 
 @media (max-width: 900px) {

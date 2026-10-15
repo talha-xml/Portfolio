@@ -1,8 +1,9 @@
 .footer {
   text-align: center;
-  padding: 20px;
-  background-color: #20232a; /* React theme blue */
-  color: #61dafb; /* React dark theme text */
+  padding: 24px 20px;
+  background-color: #090b18;
+  border-top: 1px solid rgba(52, 211, 153, 0.12);
+  color: #34d399;
   margin-top: auto;
 }
 
