@@ -1,8 +1,47 @@
+import React, { useState } from 'react';
 import '../styles/Contact.css';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
+  const [result, setResult] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusType, setStatusType] = useState('');
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setResult('Sending message...');
+    setStatusType('');
+
+    try {
+      const form = event.target;
+      const formData = new FormData(form);
+      formData.append('access_key', 'ef720cf5-60f9-40fc-b2c9-a48b091a4d14');
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatusType('success');
+        setResult('Thank you! Your message has been sent successfully.');
+        form.reset();
+      } else {
+        setStatusType('error');
+        setResult(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setStatusType('error');
+      setResult('Failed to send message. Please check your connection or email directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="contact-card">
@@ -17,7 +56,7 @@ function Contact() {
           an exciting idea, I'd love to hear from you.
         </p>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={onSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -25,12 +64,12 @@ function Contact() {
 
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
           </div>
 
           <div className="form-group">
             <label htmlFor="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" required />
+            <input type="tel" id="phone" name="phone" placeholder="+92 XXX XXXXXXX" required />
           </div>
 
           <div className="form-group">
@@ -45,9 +84,11 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button type="submit" className="contact-submit">
-            Send Message
+          <button type="submit" className="contact-submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
+
+          {result && <p className={`form-status ${statusType}`}>{result}</p>}
         </form>
 
         <div className="contact-email">
