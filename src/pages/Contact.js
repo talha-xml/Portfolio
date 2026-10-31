@@ -15,9 +15,17 @@ function Contact() {
     setStatusType('');
 
     try {
+      const accessKey = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) {
+        setStatusType('error');
+        setResult('Submission failed: Web3Forms access key is missing.');
+        setIsSubmitting(false);
+        return;
+      }
+
       const form = event.target;
       const formData = new FormData(form);
-      formData.append('access_key', 'ef720cf5-60f9-40fc-b2c9-a48b091a4d14');
+      formData.append('access_key', accessKey);
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
