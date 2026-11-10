@@ -7,8 +7,8 @@
 .contact-card {
   position: relative;
   overflow: hidden;
-  background: #11152b;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0d1a12;
+  border: 1px solid rgba(52, 211, 153, 0.15);
   border-radius: 30px;
   padding: 70px 50px;
   text-align: center;
@@ -18,8 +18,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(52, 211, 153, 0.12), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.12), transparent 35%);
+  background: radial-gradient(circle at top left, rgba(52, 211, 153, 0.14), transparent 38%),
+    radial-gradient(circle at bottom right, rgba(5, 150, 105, 0.14), transparent 38%);
   pointer-events: none;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .contact-title span {
-  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #6ee7b7, #34d399, #059669);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -117,7 +117,7 @@
   border: none;
   border-radius: 999px;
   background: #34d399;
-  color: #090b18;
+  color: #060d09;
   font-family: inherit;
   font-size: 0.95rem;
   font-weight: 700;

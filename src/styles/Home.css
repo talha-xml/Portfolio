@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #090b18;
+  background: #060d09;
   color: white;
 }
 
@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: center;
   padding: 120px 8%;
-  background: #090b18;
+  background: #060d09;
 }
 
 .background-grid {
@@ -45,7 +45,7 @@ body {
   height: 450px;
   top: -150px;
   left: -120px;
-  background: rgba(52, 211, 153, 0.14);
+  background: rgba(52, 211, 153, 0.16);
 }
 
 .blob2 {
@@ -53,7 +53,7 @@ body {
   height: 500px;
   right: -150px;
   top: 50px;
-  background: rgba(139, 92, 246, 0.15);
+  background: rgba(16, 185, 129, 0.14);
 }
 
 .hero-container {
@@ -114,7 +114,7 @@ body {
 }
 
 .hero-title span {
-  background: linear-gradient(120deg, #34d399, #8b5cf6, #ec4899);
+  background: linear-gradient(120deg, #6ee7b7, #34d399, #059669);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -122,7 +122,7 @@ body {
 .hero-subtitle {
   font-size: 25px;
   font-weight: 700;
-  color: #e8edf5;
+  color: #e2e8f0;
   margin-bottom: 30px;
 }
 
@@ -158,8 +158,8 @@ body {
 
 .primary-btn {
   border: none;
-  background: linear-gradient(90deg, #34d399, #8b5cf6);
-  color: #09101b;
+  background: linear-gradient(90deg, #6ee7b7, #34d399, #10b981);
+  color: #060d09;
 }
 
 .primary-btn:hover {
@@ -176,7 +176,7 @@ body {
 .secondary-btn:hover {
   transform: translateY(-5px);
   border-color: #34d399;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(52, 211, 153, 0.1);
 }
 
 .hero-socials {
@@ -194,8 +194,8 @@ body {
   align-items: center;
   font-size: 22px;
   color: #34d399;
-  background: #11152b;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0d1a12;
+  border: 1px solid rgba(52, 211, 153, 0.18);
   text-decoration: none;
   transition: 0.35s ease;
 }
@@ -203,7 +203,7 @@ body {
 .hero-socials a:hover {
   transform: translateY(-6px);
   background: #34d399;
-  color: #090b18;
+  color: #060d09;
   box-shadow: 0 0 30px rgba(52, 211, 153, 0.4);
 }
 
@@ -253,10 +253,10 @@ body {
   z-index: 2;
   padding: 28px;
   border-radius: 26px;
-  background: #11152b;
+  background: #0d1a12;
   border: 1px solid transparent;
-  background-image: linear-gradient(#11152b, #11152b),
-    linear-gradient(135deg, #34d399, #8b5cf6, #ec4899);
+  background-image: linear-gradient(#0d1a12, #0d1a12),
+    linear-gradient(135deg, #6ee7b7, #34d399, #059669);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   box-shadow: 0 0 55px rgba(52, 211, 153, 0.15);
@@ -266,7 +266,7 @@ body {
 }
 
 .code-card:hover {
-  box-shadow: 0 25px 70px rgba(52, 211, 153, 0.25), 0 0 80px rgba(139, 92, 246, 0.18);
+  box-shadow: 0 25px 70px rgba(52, 211, 153, 0.25), 0 0 80px rgba(16, 185, 129, 0.22);
 }
 
 .window-buttons {
@@ -315,7 +315,7 @@ body {
 }
 
 .keyword {
-  color: #ff79c6;
+  color: #6ee7b7;
 }
 
 .variable {
@@ -323,11 +323,11 @@ body {
 }
 
 .string {
-  color: #6ee7b7;
+  color: #86efac;
 }
 
 .function {
-  color: #a78bfa;
+  color: #10b981;
 }
 .floating-card {
   position: absolute;
@@ -336,10 +336,10 @@ body {
   gap: 10px;
   padding: 14px 22px;
   border-radius: 18px;
-  background: rgba(17, 21, 43, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 26, 18, 0.92);
+  border: 1px solid rgba(52, 211, 153, 0.15);
   backdrop-filter: blur(15px);
-  color: #dfe8ff;
+  color: #b9ffe5;
   font-weight: 600;
   box-shadow: 0 0 40px rgba(52, 211, 153, 0.08);
   z-index: 3;

@@ -16,11 +16,11 @@ html {
 
   padding: 0 28px;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.15);
 
   border-radius: 22px;
 
-  background: rgba(9, 11, 24, 0.72);
+  background: rgba(8, 15, 11, 0.8);
 
   backdrop-filter: blur(18px);
 
@@ -164,9 +164,9 @@ html {
 
     border-radius: 22px;
 
-    background: rgba(9, 11, 24, 0.95);
+    background: rgba(8, 15, 11, 0.96);
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.15);
 
     backdrop-filter: blur(18px);
   }
