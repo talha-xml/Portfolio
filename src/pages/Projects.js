@@ -54,6 +54,16 @@ function Projects() {
       unavailable: false
     },
     {
+      title: 'PokeDex',
+      subtitle: 'PokeDex Web Application',
+      description:
+        'This project is a web application that serves as a PokeDex, allowing users to explore and learn about various Pokemon. It provides detailed information about each Pokemon, including their types, abilities, stats, and evolutions. The application features a user-friendly interface and interactive elements to enhance the user experience.',
+      technologies: ['JavaScript', 'ReactJS', 'PokéAPI', 'CSS'],
+      github: 'https://github.com/talha-xml/PokeDex',
+      wesbite: 'https://pokedex-xk5m.onrender.com/'
+    },
+
+    {
       title: 'Compiler Construction',
       subtitle: 'Compiler Phase I & Phase II Implementation',
       description:
@@ -69,6 +79,14 @@ function Projects() {
         'This project implements an inverted index using Hadoop and MapReduce for efficient retrieval of documents based on their content. The project demonstrates the use of distributed computing techniques to process large datasets and build an index that allows for fast search and retrieval of information. Testes on 50+ eBooks.',
       technologies: ['Python', 'Hadoop', 'MapReduce', 'Big Data'],
       github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex'
+    },
+    {
+      title: 'Computer & Communication Networks',
+      subtitle: 'Business System Simulation',
+      description:
+        'This project designs a multi-base enterprise network in Cisco Packet Tracer with VLAN segmentation, DHCP, and inter-VLAN routing. The project demonstrates Router-on-a-Stick and RIPv2 to connect five bases securely and efficiently. Tested with end-to-end pings across all bases.',
+      technologies: ['Cisco Packet Tracer', 'Network Simulation', 'TCP/IP'],
+      github: 'https://github.com/talha-xml/Computer-Networks-Project'
     }
   ];
 

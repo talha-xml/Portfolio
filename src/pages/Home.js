@@ -90,12 +90,12 @@ const Home = () => {
           </div>
           <div className="hero-stats">
             <div>
-              <h3>4</h3>
+              <h3>8</h3>
               <p>Projects Built</p>
             </div>
             <div className="divider"></div>
             <div>
-              <h3>2</h3>
+              <h3>3</h3>
               <p>Years Learning</p>
             </div>
           </div>
