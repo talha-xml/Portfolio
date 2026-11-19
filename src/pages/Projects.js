@@ -62,7 +62,26 @@ function Projects() {
       github: 'https://github.com/talha-xml/PokeDex',
       website: 'https://pokedex-xk5m.onrender.com/'
     },
-
+    {
+      title: 'DevOps',
+      subtitle: 'PakVista - Static Webhosting',
+      description:
+        "This project builds PakVista, a containerized tourism website showcasing Pakistan's top five destinations using HTML5 and CSS3. It implements production-grade CI/CD with GitFlow, Docker, and GitHub Actions across development, staging, and production environments. Deployed automatically to Render with automated linting, versioned images, and secrets management.",
+      technologies: [
+        'HTML5',
+        'CSS3',
+        'Docker',
+        'Nginx Alpine',
+        'Docker Hub',
+        'GitHub Actions',
+        'Git',
+        'GitFlow',
+        'Render',
+        'HTMLHint',
+        'Stylelint',
+        'Parcel'
+      ]
+    },
     {
       title: 'Compiler Construction',
       subtitle: 'Compiler Phase I & Phase II Implementation',
