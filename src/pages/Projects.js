@@ -57,10 +57,10 @@ function Projects() {
       title: 'PokeDex',
       subtitle: 'PokeDex Web Application',
       description:
-        'This project is a web application that serves as a PokeDex, allowing users to explore and learn about various Pokemon. It provides detailed information about each Pokemon, including their types, abilities, stats, and evolutions. The application features a user-friendly interface and interactive elements to enhance the user experience.',
-      technologies: ['JavaScript', 'ReactJS', 'PokéAPI', 'CSS'],
+        'This project is a web application that serves as a PokeDex, allowing users to explore and learn about various Pokemon. It provides detailed information about each Pokemon, including their types, abilities, stats, and evolutions. The application features a user-friendly interface and interactive elements to enhance the user experience. Users can also filter Pokemon by type and search for specific Pokemon using the search functionality. The project utilizes the PokeAPI to fetch data and display it in an organized manner.',
+      technologies: ['JavaScript', 'ReactJS', 'CSS', 'PokéAPI', 'Render'],
       github: 'https://github.com/talha-xml/PokeDex',
-      wesbite: 'https://pokedex-xk5m.onrender.com/'
+      website: 'https://pokedex-xk5m.onrender.com/'
     },
 
     {
