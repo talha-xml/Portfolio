@@ -1,7 +1,19 @@
+import React, { useState } from 'react';
 import '../styles/Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
+  const [activeFilter, setActiveFilter] = useState('Show All');
+
+  const filterCategories = [
+    'Show All',
+    'Web Development',
+    'Full-Stack',
+    'DevOps',
+    'AI',
+    'Others'
+  ];
+
   const projects = [
     {
       title: 'ReMIND - Final Year Project',
@@ -29,7 +41,8 @@ function Projects() {
       website: 'https://remind-frontend.onrender.com/',
       demo: 'https://drive.google.com/file/d/1zOId8WjTa-T1dO0bHx93q9JBHH22npdH/view?usp=drive_link',
       featured: true,
-      unavailable: true
+      unavailable: true,
+      categories: ['Web Development', 'Full-Stack', 'AI']
     },
     {
       title: 'Risuto',
@@ -51,7 +64,8 @@ function Projects() {
       ],
       github: 'https://github.com/talha-xml/risuto',
       website: 'https://risuto-frontend.onrender.com/',
-      unavailable: false
+      unavailable: false,
+      categories: ['Web Development', 'Full-Stack']
     },
     {
       title: 'PokeDex',
@@ -60,7 +74,8 @@ function Projects() {
         'This project is a web application that serves as a PokeDex, allowing users to explore and learn about various Pokemon. It provides detailed information about each Pokemon, including their types, abilities, stats, and evolutions. The application features a user-friendly interface and interactive elements to enhance the user experience. Users can also filter Pokemon by type and search for specific Pokemon using the search functionality. The project utilizes the PokeAPI to fetch data and display it in an organized manner.',
       technologies: ['JavaScript', 'ReactJS', 'CSS', 'PokéAPI', 'Render'],
       github: 'https://github.com/talha-xml/PokeDex',
-      website: 'https://pokedex-xk5m.onrender.com/'
+      website: 'https://pokedex-xk5m.onrender.com/',
+      categories: ['Web Development']
     },
     {
       title: 'DevOps',
@@ -80,7 +95,8 @@ function Projects() {
         'HTMLHint',
         'Stylelint',
         'Parcel'
-      ]
+      ],
+      categories: ['DevOps']
     },
     {
       title: 'Compiler Construction',
@@ -88,7 +104,8 @@ function Projects() {
       description:
         'This project involves implementing a compiler for a custom programming language, covering both Phase I and Phase II of compiler construction. It includes lexical analysis, syntax parsing, semantic analysis, symbol table management, error handling, and intermediate code generation to demonstrate the complete compilation process.',
       technologies: ['C', 'Flex', 'Bison', 'Lexical Analyzer', 'Parser'],
-      github: 'https://github.com/talha-xml/Compiler-Construction-Project'
+      github: 'https://github.com/talha-xml/Compiler-Construction-Project',
+      categories: ['Others']
     },
 
     {
@@ -97,7 +114,8 @@ function Projects() {
       description:
         'This project implements an inverted index using Hadoop and MapReduce for efficient retrieval of documents based on their content. The project demonstrates the use of distributed computing techniques to process large datasets and build an index that allows for fast search and retrieval of information. Testes on 50+ eBooks.',
       technologies: ['Python', 'Hadoop', 'MapReduce', 'Big Data'],
-      github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex'
+      github: 'https://github.com/talha-xml/PDC-Project-InvertedIndex',
+      categories: []
     },
     {
       title: 'Computer & Communication Networks',
@@ -105,9 +123,19 @@ function Projects() {
       description:
         'This project designs a multi-base enterprise network in Cisco Packet Tracer with VLAN segmentation, DHCP, and inter-VLAN routing. The project demonstrates Router-on-a-Stick and RIPv2 to connect five bases securely and efficiently. Tested with end-to-end pings across all bases.',
       technologies: ['Cisco Packet Tracer', 'Network Simulation', 'TCP/IP'],
-      github: 'https://github.com/talha-xml/Computer-Networks-Project'
+      github: 'https://github.com/talha-xml/Computer-Networks-Project',
+      categories: ['Others']
     }
   ];
+
+  const filteredProjects =
+    activeFilter === 'Show All'
+      ? projects
+      : projects.filter(
+          (project) => project.categories && project.categories.includes(activeFilter)
+        );
+
+  const isSingleCard = filteredProjects.length === 1 && !filteredProjects[0].featured;
 
   return (
     <section id="projects" className="projects">
@@ -117,64 +145,106 @@ function Projects() {
           Things I've <span>Built.</span>
         </h1>
       </div>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className={project.featured ? 'project-card featured' : 'project-card'}>
-            {project.featured && <div className="featured-ribbon">Featured</div>}
-            <div className="project-content">
-              <h2>{project.title}</h2>
-              <h3>{project.subtitle}</h3>
-              <p>{project.description}</p>
-              <div className="project-tech">
-                {project.technologies.map((tech, i) => (
-                  <span key={i}>{tech}</span>
-                ))}
-              </div>
-              <div className="project-buttons">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-btn"
-                >
-                  <FaGithub />
-                  View Source
-                </a>
 
-                {project.website && (
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="visit-btn"
-                  >
-                    <FaExternalLinkAlt />
-                    Visit
-                  </a>
-                )}
+      <div className="projects-filter-wrapper">
+        <div className="projects-filter-bar">
+          {filterCategories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={`filter-btn ${activeFilter === category ? 'active' : ''}`}
+              onClick={() => setActiveFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="demo-btn"
-                  >
-                    <FaExternalLinkAlt />
-                    Video Demo
-                  </a>
-                )}
-              </div>
-              {project.unavailable && (
-                <p className="domain-warning">
-                  * Note: Remindio.space is the official domain. The "Visit" link above is an
-                  alternative domain; due to a limited hosting plan, processing will be much slower.
-                </p>
-              )}
-            </div>
+        {activeFilter !== 'Show All' && (
+          <div className="filter-count-wrapper">
+            <p className="projects-found-text">
+              Projects Found: <span>{filteredProjects.length}</span>
+            </p>
           </div>
-        ))}
+        )}
       </div>
+
+      {filteredProjects.length === 0 ? (
+        <div className="no-projects-found">
+          <p>No projects found matching "{activeFilter}".</p>
+          <button
+            type="button"
+            className="reset-filter-btn"
+            onClick={() => setActiveFilter('Show All')}
+          >
+            Show All Projects
+          </button>
+        </div>
+      ) : (
+        <div className={`projects-grid ${isSingleCard ? 'single-card' : ''}`}>
+          {filteredProjects.map((project, index) => (
+            <div
+              key={project.title || index}
+              className={project.featured ? 'project-card featured' : 'project-card'}
+            >
+              {project.featured && <div className="featured-ribbon">Featured</div>}
+              <div className="project-content">
+                <h2>{project.title}</h2>
+                <h3>{project.subtitle}</h3>
+                <p>{project.description}</p>
+                <div className="project-tech">
+                  {project.technologies.map((tech, i) => (
+                    <span key={i}>{tech}</span>
+                  ))}
+                </div>
+                <div className="project-buttons">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-btn"
+                    >
+                      <FaGithub />
+                      View Source
+                    </a>
+                  )}
+
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="visit-btn"
+                    >
+                      <FaExternalLinkAlt />
+                      Visit
+                    </a>
+                  )}
+
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="demo-btn"
+                    >
+                      <FaExternalLinkAlt />
+                      Video Demo
+                    </a>
+                  )}
+                </div>
+                {project.unavailable && (
+                  <p className="domain-warning">
+                    * Note: Remindio.space is the official domain. The "Visit" link above is an
+                    alternative domain; due to a limited hosting plan, processing will be much slower.
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
