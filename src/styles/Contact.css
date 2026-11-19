@@ -111,10 +111,13 @@
 }
 
 .contact-submit {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   display: block;
   margin: 10px auto 0;
   padding: 14px 30px;
-  border: none;
+  border: 1px solid #34d399;
   border-radius: 999px;
   background: #34d399;
   color: #060d09;
@@ -122,12 +125,32 @@
   font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
-.contact-submit:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(52, 211, 153, 0.3);
+.contact-submit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #060d09;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.contact-submit:hover:not(:disabled)::before {
+  transform: scaleX(1);
+}
+
+.contact-submit:hover:not(:disabled) {
+  color: #34d399;
+  border-color: #34d399;
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.45);
 }
 
 .contact-submit:disabled {
@@ -201,6 +224,9 @@
 }
 
 .contact-link {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,21 +237,41 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
-  transition: 0.35s;
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.contact-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: rgba(52, 211, 153, 0.14);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.contact-link:hover::before {
+  transform: scaleX(1);
 }
 
 .contact-link svg {
   font-size: 1.4rem;
   color: #34d399;
+  position: relative;
+  z-index: 2;
+  transition: color 0.35s ease;
 }
 
 .contact-link:hover {
-  transform: translateY(-8px);
   border-color: rgba(52, 211, 153, 0.5);
-  background: rgba(52, 211, 153, 0.08);
-  box-shadow: 0 0 35px rgba(52, 211, 153, 0.12);
+  box-shadow: 0 0 35px rgba(52, 211, 153, 0.15);
 }
 
 @media (max-width: 768px) {

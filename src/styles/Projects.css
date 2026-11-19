@@ -122,22 +122,64 @@
   font-size: 0.85rem;
 }
 
-.github-btn {
+.github-btn,
+.visit-btn,
+.demo-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 13px 25px;
   border-radius: 999px;
   text-decoration: none;
+  font-weight: 700;
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.github-btn::before,
+.visit-btn::before,
+.demo-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.github-btn svg,
+.visit-btn svg,
+.demo-btn svg {
+  position: relative;
+  z-index: 2;
+  transition: color 0.35s ease;
+}
+
+.github-btn {
   color: #060d09;
   background: #34d399;
-  font-weight: 700;
-  transition: 0.3s ease;
+  border: 1px solid #34d399;
+}
+
+.github-btn::before {
+  background: #060d09;
+}
+
+.github-btn:hover::before {
+  transform: scaleX(1);
 }
 
 .github-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(52, 211, 153, 0.35);
+  color: #34d399;
+  border-color: #34d399;
+  box-shadow: 0 0 25px rgba(52, 211, 153, 0.45);
 }
 
 .project-buttons {
@@ -148,39 +190,43 @@
 }
 
 .visit-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 25px;
-  border-radius: 999px;
-  text-decoration: none;
   color: #060d09;
   background: linear-gradient(120deg, #6ee7b7, #10b981);
-  font-weight: 700;
-  transition: 0.3s ease;
+  border: 1px solid #10b981;
+}
+
+.visit-btn::before {
+  background: #060d09;
+}
+
+.visit-btn:hover::before {
+  transform: scaleX(1);
 }
 
 .visit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+  border-color: #6ee7b7;
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.45);
 }
 
 .demo-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 25px;
-  border-radius: 999px;
-  text-decoration: none;
   color: #1f2937;
   background: #fef08a;
-  font-weight: 700;
-  transition: 0.3s ease;
+  border: 1px solid #fef08a;
+}
+
+.demo-btn::before {
+  background: #060d09;
+}
+
+.demo-btn:hover::before {
+  transform: scaleX(1);
 }
 
 .demo-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(250, 204, 21, 0.3);
+  color: #fef08a;
+  border-color: #fef08a;
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
 }
 .domain-warning {
   margin-top: 15px;

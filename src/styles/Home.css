@@ -148,23 +148,50 @@ body {
 
 .primary-btn,
 .secondary-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   padding: 16px 34px;
   border-radius: 50px;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.35s ease;
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.primary-btn::before,
+.secondary-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
 }
 
 .primary-btn {
-  border: none;
+  border: 1px solid #34d399;
   background: linear-gradient(90deg, #6ee7b7, #34d399, #10b981);
   color: #060d09;
 }
 
+.primary-btn::before {
+  background: #060d09;
+}
+
+.primary-btn:hover::before {
+  transform: scaleX(1);
+}
+
 .primary-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(52, 211, 153, 0.4);
+  color: #34d399;
+  border-color: #34d399;
+  box-shadow: 0 0 35px rgba(52, 211, 153, 0.45);
 }
 
 .secondary-btn {
@@ -173,10 +200,18 @@ body {
   color: white;
 }
 
+.secondary-btn::before {
+  background: linear-gradient(90deg, #6ee7b7, #34d399, #10b981);
+}
+
+.secondary-btn:hover::before {
+  transform: scaleX(1);
+}
+
 .secondary-btn:hover {
-  transform: translateY(-5px);
+  color: #060d09;
   border-color: #34d399;
-  background: rgba(52, 211, 153, 0.1);
+  box-shadow: 0 0 35px rgba(52, 211, 153, 0.4);
 }
 
 .hero-socials {
@@ -186,6 +221,9 @@ body {
 }
 
 .hero-socials a {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -197,13 +235,31 @@ body {
   background: #0d1a12;
   border: 1px solid rgba(52, 211, 153, 0.18);
   text-decoration: none;
-  transition: 0.35s ease;
+  transition: color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.hero-socials a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #34d399;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.hero-socials a:hover::before {
+  transform: scaleX(1);
 }
 
 .hero-socials a:hover {
-  transform: translateY(-6px);
-  background: #34d399;
   color: #060d09;
+  border-color: #34d399;
   box-shadow: 0 0 30px rgba(52, 211, 153, 0.4);
 }
 
